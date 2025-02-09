@@ -1,0 +1,139 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fdfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 90%;
+    gap: 40px;
+}
+
+.info-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: gray;
+}
+
+.form-section {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Form labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Two-column layout for fields */
+.input-group {
+    width: 48%;
+}
+
+/* Full-width fields */
+.full-width {
+    width: 100%;
+}
+
+/* Password input with icon */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Button */
+button {
+    width: 100%;
+    background-color: #4ab8a1;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #42a08c;
+}
+
+/* Footer */
+.footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    color: gray;
+}
+
+.footer a {
+    color: #42a08c;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-section {
+        max-width: 100%;
+    }
+
+    .form-section {
+        max-width: 100%;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
