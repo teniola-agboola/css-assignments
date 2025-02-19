@@ -3,72 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Individuals</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Assignment 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <!-- Left Side -->
-        <div class="info-section">
-            <img src="Logo (1).png" alt="Logo" class="logo">
-            <h1>For Individuals</h1>
-            <p>Inspiring wholesome harmony for the mind, body, and spirit, for everyone, everywhere.</p>
-        </div>
-
-        <!-- Right Side (Form) -->
-        <div class="form-section">
-            <form>
-                <div class="input-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="Enter First Name">
+   
+    <section class="main_section">
+        <header class="header">
+        </header>
+        <div class="sign_up">
+            <div class="left_side">
+                <div class="center">
+                    <img src="Logo (1).png" alt="Logo" class="logo" width="80px" height="80px">
+                    <h1 class="title" >For Individuals</h1>
+                    <p class="title_paragraph">Start benefiting from the wellness experience. For companies looking on 
+                    increasing productivity, and improving organization wellness.
+                    </p>
+                    <p class="title_paragraph_mobile">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
                 </div>
-                <div class="input-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Enter Last Name">
-                </div>
-                <div class="input-group">
-                    <label for="gender">Gender</label>
-                    <select id="gender">
-                        <option>Select here</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob">
-                </div>
-                <div class="input-group">
-                    <label for="weight">Weight (KG)</label>
-                    <input type="number" id="weight" placeholder="Enter Weight">
-                </div>
-                <div class="input-group">
-                    <label for="height">Height (CM)</label>
-                    <input type="number" id="height" placeholder="Enter Height">
-                </div>
-                <div class="full-width">
-                    <label for="activity">Activity Level</label>
-                    <select id="activity">
-                        <option>Select here</option>
-                        <option>Sedentary</option>
-                        <option>Lightly Active</option>
-                        <option>Moderately Active</option>
-                        <option>Very Active</option>
-                    </select>
-                </div>
-                <div class="password-container">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                </div>
-                <button type="submit">Register</button>
-            </form>
-            <p class="footer">
-                By clicking Register, you agree to our 
-                <a href="#">Terms of Use</a> and our 
-                <a href="#">Privacy Policy</a>.
+            </div>
+            <div class="right_side">
+               <div class="center_2">
+                <div class="form_inputs">
+                    <form class="form">
+                      <div class="input_row">
+                        <div class="input_wrapper" aria-label="first_name">
+                          <label for="first_name">First Name:</label><br />
+                          <input type="text" id="first_name" placeholder="First name" />
+                        </div>
+                        <div class="input_wrapper" aria-label="last_name">
+                          <label for="last_name">Last Name:</label><br />
+                          <input type="text" id="last_name" placeholder="Last name" />
+                        </div>
+                      </div>
+                      <div class="input_row">
+                        <div class="input_wrapper" aria-label="gender">
+                          <label for="last_name">Gender:</label><br />
+                          <select
+                            class="form-select"
+                            autocomplete="Gender"
+                            id="gender"
+                            name="gender"
+                          >
+                            <option value="Male">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                        </div>
+                        <div class="input_wrapper" aria-label="DOB">
+                            <label for="DOB">Date of birth:</label><br />
+                            <input type="date" id="DOB" placeholder="Date of birth" />
+                          </div>
+                      </div>
+                      <div class="input_row">
+                        <div class="input_wrapper" aria-label="DOB">
+                          <label for="Weight">Weight (KG):</label><br />
+                          <input type="number" id="Weight" placeholder="Enter weight" />
+                        </div>
+                        <div class="input_wrapper" aria-label="height">
+                          <label for="Height">Height (CM):</label><br />
+                          <input
+                            type="number"
+                            id="height"
+                            placeholder="Enter height here"
+                          />
+                        </div>
+                      </div>
+                      <div class="input_row">
+                        <div class="input_wrapper" aria-label="Activity level">
+                          <label for="Activity level"
+                            >Activity level:</label
+                          ><br />
+                          <select
+                          class="form-select long_input"
+                          id="Activity"
+                          name="Activity"
+                        >
+                          <option value="Male">Select here</option>
+                          <option value="Male">Active</option>
+                          <option value="Female">Inactive</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="input_row">
+                        <div class="input_wrapper" aria-label="How_did_you_hear_about_us">
+                          <label for="How_did_you_hear_about_us"
+                            >Password:</label
+                          ><br />
+                          <input
+                            class="long_input"
+                            type="password"
+                            id="Password"
+                            placeholder="Enter your password"
+                          />
+                        </div>
+                      </div>
+                      <button class="Sign_up_btn">Register<span></span></button>
+                    </form>
+                    <p class="footnote">
+                        By clicking Register, I agree to <span>Terms of Use</span> and acknowledge that I have read the <span>Privacy Policy</span>.
+                    </p>
+                  </div>
+                
+               </div>
+            </div>
+            <p class="footnote_mobile">
+                By clicking Register, I agree to <span>Terms of Use</span> and acknowledge that I have read the <span>Privacy Policy</span>.
             </p>
         </div>
-    </div>
+    </section>
 </body>
 </html>
