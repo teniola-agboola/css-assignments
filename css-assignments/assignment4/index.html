@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body class="flex-column">
+<div class="container flex-column">
+    <!-- Header -->
+    <header class="header">
+        <!-- company logo -->
+        <div>
+            <img src="assets/wppusher-logo copy.png" alt="">
+        </div>
+
+          <!-- header nagivation -->
+        <nav>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main"> 
+        <div class="main--con-1">
+            <div class="checkout">
+                <h2>Checkout</h2>
+            </div>
+
+            <div class="basic-info">
+                <h4><span>1</span> Your Basic Information</h4>
+                <form action="">
+                    <div class="personal-info-con">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" placeholder="Joe" id="firstName">
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="John" id="lastName">
+                        </div>
+                    </div>
+                    
+                    <div class="personal-email-con">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="cc-con">
+                <h4><span>2</span> Your Payment Information</h4>
+                <form action="">
+                    <label for="cardnumber">Credit Card</label>
+                    <div>
+                        <input type="text" placeholder="Card Number" id="cardnumber">
+                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="CVC">
+                    </div>
+                </form>
+            </div>
+
+            <div class="pusher">
+                <a href="#">Buy WP Pusher</a>
+                <div>
+                    <i class="fa-solid fa-question"></i>
+                    <p><span>Need any help</span> Don't hesitate to contact support!</p>
+                </div>
+                <button>Powered by <span>Stripe</span></button>
+            </div>
+        </div>
+
+
+        <div class="main--con-2">
+            <h3>Freelancer</h3>
+
+            <div class="sub">
+                <div>
+                    <span>$</span>
+                    <p>99</p>
+                    <span>/year</span>
+                </div>
+                <p>Automatically renews after 1 year</p>
+            </div>
+
+
+            <div class="services">
+                <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Use on 5 client sites</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Private repositories</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Email support</p>
+                </div>
+            </div>
+
+
+            <div class="client">
+                <p>Need 20 client sites?</p>
+                <a href="#">Switch to the Agency plan.</a>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="user">
+                <p>FTP is horrible to deal with. <span>WP Pusher</span> solves that issue, and the customer support is awesome!</p>
+                <div class="user-info">
+                    <div>
+                        <img class="image" src="assets/Bitmap.png" alt="">
+                    </div>
+                    <h3>Kirk Beard</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

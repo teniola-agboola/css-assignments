@@ -1,0 +1,57 @@
+body {
+  background-color: #A7A1C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.series {
+  font-size: 0.8em;
+  color: gray;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.badge {
+  position:absolute;
+  top: 10px;
+  left: -10px;
+  background: #ffef9f;
+  color: black;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

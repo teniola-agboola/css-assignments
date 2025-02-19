@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --projectWidth: 1440px;
+    --contentWidth: 892px;
+    --navColor: #1D2C3C;
+    --inputBgColor: #EDEFF2;
+    --inputPH: #646E7A;
+    --buyPusherBg: #646E7A;
+    --freelancerBg: #1179BF;
+    --freelancerWidth: 312px;
+    --headerBB: #E0E6EA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 16px */
+    font-size: 16px;
+}
+
+body {
+   font-family: Lato, sans-serif;
+   margin-bottom: 70px;
+}
+
+
+/*  */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: var(--projectWidth);
+    gap: 6rem;
+}
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--headerBB);
+}
+
+.header nav ul li{
+    display: inline;
+    margin-inline: 10px;
+    text-align: center;
+}
+
+
+.header nav ul li a:link,
+.header nav ul li a:visited{
+    text-decoration: none;
+    color: var(--navColor);
+    font-weight: 700;
+    font-size: .88rem;
+}
+
+.header nav ul li a:hover{
+    color: var(--freelancerBg);
+}
+
+.header nav ul li:last-child{
+    border: 1px solid var(--navColor);
+    padding: .4rem .8rem;
+    border-radius: 8px;
+}
+
+
+/* Main styling */
+.main {
+    /* width = 892px */ 
+    /* 892 - 312 = 580 */
+    width: var(--contentWidth); 
+    /* border: 1px solid red; */
+    box-shadow: 2px 2px 5px var(--buyPusherBg);
+    display: grid;
+    grid-template-columns: 1fr var(--freelancerWidth);
+    /* height: 700px; */
+
+}
+
+/* Main Container 1 styling */
+.main .main--con-1{
+    /* width = 580px */
+    display: flex;
+    flex-direction: column;
+    /* gap: 4rem; */
+    /* padding: 2.5rem; */
+}
+
+.main .main--con-1 > div{
+    border-bottom: 1px solid var(--headerBB);
+   padding: 3rem 2.5rem;
+}
+
+.main .main--con-1 .checkout h2{
+    font-size: 1.2rem;
+    color: var(--navColor);
+}
+
+.main .main--con-1 .basic-info,
+.main .main--con-1 .cc-con{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.main .main--con-1 .basic-info h4,
+.main .main--con-1 .cc-con h4{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.08rem;
+    /* justify-content: center; */
+}
+
+.main .main--con-1 .basic-info h4 span,
+.main .main--con-1 .cc-con h4 span,
+.main .main--con-1 .pusher div i{
+   color: var(--freelancerBg);
+   border: 1px solid var(--freelancerBg);
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: .9rem;
+}
+
+.main .main--con-1 .basic-info form,
+.main .main--con-1 .cc-con form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main .main--con-1 .basic-info form .personal-info-con{
+   display: flex;
+   gap: 2rem;
+}
+
+.main .main--con-1 .basic-info form .personal-info-con div,
+.main .main--con-1 .basic-info form .personal-email-con,
+.main .main--con-1 .cc-con form{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    /* width: 100%; */
+    flex: 1;
+}
+
+.main .main--con-1 .basic-info form .personal-info-con div label,
+.main .main--con-1 .basic-info form .personal-email-con label{
+    color: var(--navColor);
+    font-size: .9rem;
+}
+
+
+.main .main--con-1 .basic-info form .personal-info-con div input,
+.main .main--con-1 .basic-info form .personal-email-con input,
+.main .main--con-1 .cc-con form div input{
+    padding: .6rem .8rem;
+    border: none;
+    background-color: var(--inputBgColor);
+    border-radius: 4px;
+}
+
+.main .main--con-1 .basic-info form .personal-info-con div input:focus,
+.main .main--con-1 .basic-info form .personal-email-con input:focus{
+    outline: 2px solid var(--freelancerBg);
+}
+
+.main .main--con-1 .basic-info form .personal-info-con div input::placeholder,
+.main .main--con-1 .basic-info form .personal-email-con input::placeholder{
+   font-size: .8rem;
+   color: var(--inputPH);
+}
+
+
+.main .main--con-1 .basic-info form .personal-email-con input{
+    width: 78%;
+}
+
+.main .main--con-1 .cc-con form div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 70px;
+    border-radius: 4px;
+}
+
+.main .main--con-1 .cc-con form div input{
+    border-radius: 0;
+    outline: none;
+}
+
+.main .main--con-1 .pusher{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 1.3rem;
+}
+
+.main .main--con-1 .pusher a{
+    background-color: #038E7D;
+    padding-block: .6rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.main .main--con-1 .pusher div{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    text-align: start;
+    align-items: center;
+    gap: .6rem;
+}
+
+.main .main--con-1 .pusher div i {
+    font-size: .8rem;
+}
+
+.main .main--con-1 .pusher div p {
+    font-size: .8rem;
+}
+
+.main .main--con-1 .pusher div p span {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.main .main--con-1 .pusher button{
+    width: 25%;
+    margin: 0 auto;
+    padding: .4rem .2rem;
+    border-radius: 6px;
+    background-color: #566473;
+    border: none;
+    color: #dadada;
+    font-size: .7rem;
+}
+
+.main .main--con-1 .pusher button span{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+/* Freelancer styles */
+.main .main--con-2{
+    /* width = 312px */
+    background-color: var(--freelancerBg); 
+    color: rgba(255, 255, 255, .8); 
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* .main .main--con-2 > h3,
+.main .main--con-2 > div{
+    padding: 2rem;
+} */
+
+.main .main--con-2 .sub{ 
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.main .main--con-2 .sub div{ 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .main--con-2 .sub div span{ 
+    /* font-size: 4rem; */
+    position: absolute;
+}
+
+.main .main--con-2 .sub div span:first-child{ 
+    top: 8%;
+    left: 0;
+}
+
+.main .main--con-2 .sub div span:last-child{ 
+    bottom: 8%;
+    left: 35%;
+}
+
+ 
+.main .main--con-2 .sub div p{ 
+   font-size: 4rem;
+   margin-inline: 10px;
+}
+
+.main .main--con-2 .sub p{ 
+    font-size: .8rem;
+    max-width: 60%;
+    line-height: 1.5;
+}
+
+.main .main--con-2 .services,
+.main .main--con-2 .client{ 
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+
+.main .main--con-2 .services div {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    font-size: 1.1rem;
+}
+
+.main .main--con-2 .client {
+    font-size: .9rem;
+}
+
+.main .main--con-2 .client a:link,
+.main .main--con-2 .client a:visited{
+    color: #ffffff;
+}
+
+.main .main--con-2 .line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, .8);
+    margin-block: 15px;
+}
+
+
+.main .main--con-2 .user {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main .main--con-2 .user p{
+    max-width: 85%;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.main .main--con-2 .user p span{
+    font-weight: bolder;
+}
+
+
+.main .main--con-2 .user .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main .main--con-2 .user .user-info h3{
+    font-size: .9rem;
+}
